@@ -81,14 +81,14 @@ rm -rf COM      # Linux/Mac
 
    ```java
    enum Direction {
-       NS, EW  // Norte-Sur, Este-Oeste
+       NorteSur, EsteOeste  // Norte-Sur, Este-Oeste
    }
    ```
 
 3. **TrafficLightController** (Clase Interna)
 
    - Controla el ciclo de los semáforos
-   - Alterna entre direcciones NS y EW
+   - Alterna entre direcciones NorteSur y EsteOeste
    - Maneja tiempos de verde y amarillo
 
 4. **Vehicle** (Clase Interna)
@@ -160,8 +160,8 @@ private final Semaphore guiLock = new Semaphore(1);           // Exclusión mutu
 
 #### Semáforos
 
-- **Posición NS**: Esquina superior derecha
-- **Posición EW**: Esquina inferior izquierda
+- **Posición NorteSur**: Esquina superior derecha
+- **Posición EsteOeste**: Esquina inferior izquierda
 - **Luces**: Roja (arriba), Amarilla (medio), Verde (abajo)
 - **Estado visual**: Solo una luz encendida por vez
 
@@ -178,7 +178,7 @@ private final Semaphore guiLock = new Semaphore(1);           // Exclusión mutu
 ### Panel de Información
 
 ```
-Green: NS    Permits crossing: 2
+Green: NorteSur    Permits crossing: 2
 Vehículos generados: 15/20
 Vehículos activos: 8
 SIMULACIÓN COMPLETADA (cuando termina)
@@ -401,18 +401,6 @@ Runtime only recognizes class file versions up to 52.0
 
 ## 📈 Métricas de Rendimiento
 
-### Recursos Utilizados
-
-- **Hilos**: 1 principal + 1 controlador + 1 generador + N vehículos (máx 23)
-- **Memoria**: ~2MB para 20 vehículos
-- **CPU**: Baja utilización, GUI actualizada cada 40ms
-
-### Throughput
-
-- **Generación**: ~1 vehículo/segundo
-- **Procesamiento**: 3 vehículos pueden cruzar simultáneamente
-- **Capacidad**: 20 vehículos total por simulación
-
 ## 📚 Conceptos Educativos Demostrados
 
 ### Sistemas Operativos
@@ -436,13 +424,13 @@ Runtime only recognizes class file versions up to 52.0
 - **Facade**: Interfaz simplificada del sistema
 - **Template Method**: Estructura común de vehículos
 
-## 🎓 Objetivos Pedagógicos Cumplidos
+##  ObjetivoCumplidos
 
 1. ✅ **Aplicar semáforos de conteo y binarios**
 2. ✅ **Implementar sincronización entre hilos**
 3. ✅ **Prevenir condiciones de carrera**
 4. ✅ **Gestionar recursos compartidos**
-5. ✅ **Crear simulación visual interactiva**
+5. ✅ **Crear simulación visual**
 6. ✅ **Implementar terminación controlada**
 7. ✅ **Manejar estados concurrentes**
 8. ✅ **Aplicar patrones de concurrencia**
@@ -458,24 +446,3 @@ Runtime only recognizes class file versions up to 52.0
 **Líneas de código**: ~350  
 **Clases**: 4 clases + 1 enum  
 **Paradigma**: Programación Orientada a Objetos + Concurrencia
-
-**Compatibilidad**:
-
-- ✅ Java 8 (JDK 1.8) - Recomendado para máxima compatibilidad
-- ✅ Java 11 (LTS)
-- ✅ Java 17 (LTS)
-- ✅ Java 21 (LTS)
-
-**Requisitos del Sistema**:
-
-- JDK/JRE 8 o superior
-- ~2MB de RAM libre
-- Soporte para GUI (Swing)
-- Terminal/Consola para logs
-
-**Desarrollado para**: Sistemas Operativos - UPTC  
-**Fecha**: Septiembre 2025
-
----
-
-¡Simulación de tráfico completa en un solo archivo! 🚦✨
