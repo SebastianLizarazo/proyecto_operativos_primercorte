@@ -10,6 +10,7 @@ bin/
 build/
 target/
 out/
+COM/
 
 # Archivos de logs
 *.log
