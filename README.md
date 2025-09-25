@@ -3,7 +3,7 @@
 ## Autores
 
 - Sebastian David Lizarazo Duarte
-- Andrés Felipe Luna
+- Andrés Felipe Luna Becerra
 
 ## Enlace del Proyecto
 
