@@ -1,9 +1,13 @@
 # Simulador de Tráfico con Semáforos V2
 
-### Autores
+## Autores
 
 - Sebastian David Lizarazo Duarte
 - Andrés Felipe Luna
+
+## Enlace del Proyecto
+
+https://github.com/SebastianLizarazo/proyecto_operativos_primercorte.git
 
 ## 📋 Descripción
 
