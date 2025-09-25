@@ -1,5 +1,10 @@
 # Simulador de Tráfico con Semáforos V2
 
+### Autores
+
+- Sebastian David Lizarazo Duarte
+- Andrés Felipe Luna
+
 ## 📋 Descripción
 
 `TrafficSemaphoreSimulationV2.java` es una implementación monolítica completa de un simulador de tráfico vehicular que utiliza semáforos para controlar el flujo en una intersección. Este archivo único contiene todas las clases necesarias para la simulación, incluyendo la lógica de control, la interfaz gráfica y la gestión de vehículos.
@@ -424,7 +429,7 @@ Runtime only recognizes class file versions up to 52.0
 - **Facade**: Interfaz simplificada del sistema
 - **Template Method**: Estructura común de vehículos
 
-##  ObjetivoCumplidos
+## ObjetivoCumplidos
 
 1. ✅ **Aplicar semáforos de conteo y binarios**
 2. ✅ **Implementar sincronización entre hilos**
